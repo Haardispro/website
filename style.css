@@ -88,10 +88,17 @@ body{
 .drop p{
     font-size: 7px;
 }
+
+.drop button{
+    outline: none;
+    border: none;
+    background-color: white;
+}
 .hide{
     display: none;
 }
 #btn{
+    
     margin: 0 auto;
     display: block;
     font-family: 'JetBrains Mono';
@@ -103,6 +110,10 @@ body{
     border-radius: 10px;
     padding: 10px 20px;
 }
+::-webkit-scrollbar{
+    display: none;
+}
+
 @media all and (max-width: 550px){
     .center h1{
         margin: 60px;

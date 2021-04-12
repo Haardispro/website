@@ -5,38 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" id="MyLink">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Resposive Web Design</title>
+    <title id="title">Resposive Web Design</title>
 </head>
 <body>
     <div id="MyTopnav" class="topnav">
         
-        <button class="down"><a href="#" class="ho">Home</a></button>
+        <button class="down" onclick="hide()"><a href="#" class="ho">Home</a></button>
          
         
-        <button><a href="#" class="c">About</a></button>
-        <button><a href="#" class="ab">Contact</a></button>
+        <button onclick="about()"><a href="#" class="c">About</a></button>
+        <button><a href="contact.html" class="ab">Contact</a></button>
+        
         <p>Haard Majmudar</p>
         
     </div>
     <div class="center">
-        <h1>Haard Majmudar</h1>
-        <h2>Student and Aspiring Programmer</h2>
+        <h1 id="name">Haard Majmudar</h1>
+        <h2 id="dis">Student and Aspiring Programmer</h2>
         
     </div>
-    <button id="btn"></button>
+    
     <div class="drop">
-        <a href="#">About</a>
+        <button onclick="about()"><a href="#">About</a></button>
         
         <p>________________________</p>
         
-        <a href="#">Contact</a>
+        <button><a href="contact.html">Contact</a></button>
 
         <p>________________________</p>
 
         <a href="https://open.spotify.com/playlist/1rXdtREY4zUqE84TjqVH9q?si=kY_YZ6dgRUG-upcLguRYJQ" class="chil" target="_blank">Chil Lofi</a>
     </div>
-    <button onclick="printPage()" class="hide">Print Page</button>
+    
+    
     <script src="home.js"></script>
 </body>
 </html>

@@ -22,28 +22,22 @@ $(document).ready(() => {
   });
 });
 
-var button = document.getElementById("btn");
-button.innerHTML = 'Light mode';
-var body = document.getElementsByTagName("body")[0];
-body.appendChild(button);
-button.setAttribute('onclick', 'swapStyle("light.css")');
-
-function swapStyle(sheet){
-  document.getElementById('MyLink').setAttribute('href', sheet);
-  
-  if (sheet === "light.css"){
-      button.innerHTML = 'Dark mode';
-      button.setAttribute('onclick', 'swapStyle("style.css")');
-      
+function hide() {
+  var a = document.getElementById('dis');
+  var b = document.getElementById('name');
+  if (b.innerHTML = 'I am 14 years old'){
+    b.innerHTML = 'Haard Majmudar';
   }
-  else if (sheet == "style.css"){
-      button.innerHTML = 'Light mode';
-      button.setAttribute('onclick', 'swapStyle("light.css")');
-      
+  if (a.innerHTML = 'I live in India. And I am learning Python, C/C++, HTML/CSS and Javascript') {
+    a.innerHTML = 'Student and Aspiring Programmer';
   }
   
 }
-function h1_h2() {
-  //Change the innerHTMl of the h1 and the h2 tag when about is
-  //clicked
+function about() {
+  var a = document.getElementById('name');
+  var b = document.getElementById('dis');
+  
+  a.innerHTML = 'I am 14 years old';
+  b.innerHTML = 'I live in India. And I am learning Python, C/C++, HTML/CSS and Javascript';
+  
 }
